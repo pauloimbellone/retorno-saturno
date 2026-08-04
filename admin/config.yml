@@ -1,0 +1,176 @@
+# ============================================================================
+# Panel de administración — El retorno de Saturno (Sveltia CMS)
+#
+# ⚠️ ANTES DE PUBLICAR: reemplazá  TU-USUARIO/TU-REPO  por tu repo de GitHub.
+#    (ver GUIA-ADMIN.md)
+# ============================================================================
+
+backend:
+  name: github
+  repo: TU-USUARIO/TU-REPO      # <-- COMPLETAR, ej: paulo-imbellone/retorno-saturno
+  branch: main
+
+# Idioma del contenido por defecto
+locale: es
+
+# Permite probar el panel LOCAL (en tu compu) sin GitHub. En el sitio publicado se ignora.
+local_backend: true
+
+# Carpeta donde se guardan las fotos que sube Paulo
+media_folder: "img"
+public_folder: "/img"
+
+# Mensajes legibles en el historial del repo
+backend_commit_messages:
+  create: 'Alta de amuleto'
+  update: 'Cambios en el sitio'
+  uploadMedia: 'Nueva foto: {{path}}'
+  deleteMedia: 'Se quitó una foto: {{path}}'
+
+collections:
+  - name: sitio
+    label: "El retorno de Saturno"
+    files:
+
+      # =================== AMULETOS (lo que Paulo usa siempre) ===================
+      - name: amuletos
+        label: "Amuletos"
+        file: "content/amuletos.json"
+        icon: diamond
+        description: "Agregá, editá o marcá como vendido cada amuleto."
+        editor: { preview: false }
+        fields:
+          - label: "Amuletos"
+            name: amuletos
+            label_singular: "amuleto"
+            widget: list
+            allow_add: true
+            add_to_top: true
+            collapsed: true
+            summary: "{{fields.nombre.es}} — $ {{fields.precio}}"
+            fields:
+              - label: "¿A la venta?"
+                name: disponible
+                widget: boolean
+                default: true
+                hint: "Destildá cuando se venda: la pieza queda en el catálogo marcada como «Vendido» (no se borra)."
+              - label: "Foto"
+                name: foto
+                widget: image
+                choose_url: false
+                media_library: { config: { max_file_size: 3000000 } }
+                hint: "Ideal cuadrada o vertical, liviana (menos de 3 MB)."
+              - label: "Nombre"
+                name: nombre
+                widget: object
+                fields:
+                  - { label: "Nombre (español)", name: es, widget: string, hint: "Ej: Colgante Rodocrosita" }
+                  - { label: "Nombre (português) — opcional", name: pt, widget: string, required: false }
+              - label: "Categorías"
+                name: categorias
+                widget: select
+                multiple: true
+                required: false
+                hint: "Elegí una o más. Una pieza puede estar en varias (ej: Pulseras + Piezas de colección)."
+                options:
+                  - { label: "Dijes", value: "dijes" }
+                  - { label: "Gargantillas", value: "gargantillas" }
+                  - { label: "Anillos", value: "anillos" }
+                  - { label: "Pulseras", value: "pulseras" }
+                  - { label: "Piezas de colección", value: "coleccion" }
+              - label: "Precio (en pesos)"
+                name: precio
+                widget: number
+                value_type: int
+                min: 0
+                hint: "Solo el número, sin puntos ni $. Ej: 96000"
+              - label: "Piedra"
+                name: piedra
+                widget: object
+                fields:
+                  - { label: "Piedra (español)", name: es, widget: string, hint: "Ej: Rodocrosita" }
+                  - { label: "Piedra (português) — opcional", name: pt, widget: string, required: false }
+              - label: "Material"
+                name: material
+                widget: object
+                fields:
+                  - { label: "Material (español)", name: es, widget: string, hint: "Ej: Plata 950 · Rodocrosita" }
+                  - { label: "Material (português) — opcional", name: pt, widget: string, required: false }
+              - label: "Medida"
+                name: medida
+                widget: object
+                fields:
+                  - { label: "Medida (español)", name: es, widget: string, hint: "Ej: 4,5 cm" }
+                  - { label: "Medida (português) — opcional", name: pt, widget: string, required: false }
+              - label: "Descripción"
+                name: descripcion
+                widget: object
+                fields:
+                  - { label: "Descripción (español)", name: es, widget: text }
+                  - { label: "Descripción (português) — opcional", name: pt, widget: text, required: false }
+              - label: "Significado de la piedra"
+                name: significado
+                widget: object
+                fields:
+                  - { label: "Significado (español)", name: es, widget: text }
+                  - { label: "Significado (português) — opcional", name: pt, widget: text, required: false }
+
+      # =================== TEXTOS (bio e historia) ===================
+      - name: textos
+        label: "Textos (bio e historia)"
+        file: "content/textos.json"
+        icon: article
+        description: "La bio del artista y la sección de historia."
+        editor: { preview: false }
+        fields:
+          - label: "Textos del sitio"
+            name: textos
+            widget: object
+            fields:
+              - label: "Español"
+                name: es
+                widget: object
+                fields:
+                  - { label: "Bajada del inicio", name: hero_sub, widget: text }
+                  - { label: "Nota de la colección", name: collection_note, widget: string }
+                  - { label: "Título — El artista", name: about_title, widget: string }
+                  - { label: "El artista — párrafo 1", name: about_p1, widget: text }
+                  - { label: "El artista — párrafo 2", name: about_p2, widget: text }
+                  - { label: "Firma", name: about_sig, widget: string }
+                  - { label: "Título — Historia", name: historia_title, widget: string }
+                  - { label: "Historia — párrafo 1", name: historia_p1, widget: text }
+                  - { label: "Historia — párrafo 2", name: historia_p2, widget: text }
+                  - { label: "Texto de encargos", name: custom_p, widget: text }
+              - label: "Português — opcional"
+                name: pt
+                widget: object
+                required: false
+                collapsed: true
+                fields:
+                  - { label: "Bajada do início", name: hero_sub, widget: text, required: false }
+                  - { label: "Nota da coleção", name: collection_note, widget: string, required: false }
+                  - { label: "Título — O artista", name: about_title, widget: string, required: false }
+                  - { label: "O artista — parágrafo 1", name: about_p1, widget: text, required: false }
+                  - { label: "O artista — parágrafo 2", name: about_p2, widget: text, required: false }
+                  - { label: "Assinatura", name: about_sig, widget: string, required: false }
+                  - { label: "Título — História", name: historia_title, widget: string, required: false }
+                  - { label: "História — parágrafo 1", name: historia_p1, widget: text, required: false }
+                  - { label: "História — parágrafo 2", name: historia_p2, widget: text, required: false }
+                  - { label: "Texto de encomendas", name: custom_p, widget: text, required: false }
+
+      # =================== CONFIGURACIÓN (casi nunca se toca) ===================
+      - name: config
+        label: "Configuración"
+        file: "content/config.json"
+        icon: settings
+        description: "WhatsApp, Instagram y formato de precios."
+        editor: { preview: false }
+        fields:
+          - label: "Configuración"
+            name: config
+            widget: object
+            fields:
+              - { label: "WhatsApp (solo números, sin + ni espacios)", name: whatsapp, widget: string, hint: "Ej: 557591713898" }
+              - { label: "Instagram (URL completa)", name: instagram, widget: string }
+              - { label: "Símbolo de moneda", name: moneda, widget: string, default: "$ " }
+              - { label: "Formato de precio (locale)", name: localePrecio, widget: string, default: "es-AR" }
