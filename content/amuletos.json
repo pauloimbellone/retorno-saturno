@@ -2,12 +2,46 @@
   "amuletos": [
     {
       "disponible": true,
-      "categorias": ["dijes"],
+      "foto": "/img/IMG_2372.jpeg",
+      "nombre": {
+        "es": "Gargantilla labradorita",
+        "pt": "Gargantilha"
+      },
+      "categorias": [
+        "gargantillas"
+      ],
+      "precio": 150000,
+      "piedra": {
+        "es": "Labradorita",
+        "pt": "Labradorita"
+      },
+      "material": {
+        "es": "Alpaca",
+        "pt": "Alpaca"
+      },
+      "medida": {
+        "es": "3 cm",
+        "pt": "3 cm"
+      },
+      "descripcion": {
+        "es": "Luego lo lleno",
+        "pt": "Logo mais"
+      },
+      "significado": {
+        "es": "Mais tarde",
+        "pt": "Mais tarde"
+      }
+    },
+    {
+      "disponible": true,
       "foto": "img/rodocrosita.jpg",
       "nombre": {
         "es": "Colgante Rodocrosita",
         "pt": "Pingente Rodocrosita"
       },
+      "categorias": [
+        "dijes"
+      ],
       "precio": 96000,
       "piedra": {
         "es": "Rodocrosita",
@@ -32,12 +66,15 @@
     },
     {
       "disponible": false,
-      "categorias": ["pulseras", "coleccion"],
       "foto": "img/onix-azul.jpg",
       "nombre": {
         "es": "Brazalete Ónix Azul",
         "pt": "Bracelete Ônix Azul"
       },
+      "categorias": [
+        "pulseras",
+        "coleccion"
+      ],
       "precio": 184000,
       "piedra": {
         "es": "Ónix azul",
@@ -62,12 +99,15 @@
     },
     {
       "disponible": true,
-      "categorias": ["gargantillas", "coleccion"],
       "foto": "img/mandala-labradorita.jpg",
       "nombre": {
         "es": "Colgante Mandala",
         "pt": "Pingente Mandala"
       },
+      "categorias": [
+        "gargantillas",
+        "coleccion"
+      ],
       "precio": 122000,
       "piedra": {
         "es": "Labradorita",
@@ -92,12 +132,14 @@
     },
     {
       "disponible": true,
-      "categorias": ["dijes"],
       "foto": "img/ojo-de-tigre.jpg",
       "nombre": {
         "es": "Colgante Ojo de Tigre",
         "pt": "Pingente Olho de Tigre"
       },
+      "categorias": [
+        "dijes"
+      ],
       "precio": 112000,
       "piedra": {
         "es": "Ojo de tigre",
