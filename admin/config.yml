@@ -7,7 +7,7 @@
 
 backend:
   name: github
-  repo: TU-USUARIO/TU-REPO      # <-- COMPLETAR, ej: paulo-imbellone/retorno-saturno
+  repo: pauloimbellone/retorno-saturno      # <-- COMPLETAR, ej: paulo-imbellone/retorno-saturno
   branch: main
 
 # Idioma del contenido por defecto
