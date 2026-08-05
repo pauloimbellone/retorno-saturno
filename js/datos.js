@@ -125,7 +125,7 @@ window.DATOS = {
      ----------------------------------------------------------------------- */
   textos: {
     es: {
-      nav_amuletos: "Amuletos", nav_artista: "El artista", nav_historia: "Historia", nav_encargos: "Encargos",
+      nav_amuletos: "Amuletos", nav_artista: "Sobre mí", nav_historia: "Historia", nav_encargos: "Encargos",
       cart_word: "Pedido",
       hero_eyebrow: "Orfebrería · amuletos únicos",
       hero_title: 'Amuletos nacidos del <span class="it">metal y la piedra</span>',
@@ -136,7 +136,7 @@ window.DATOS = {
       filtro_todos: "Todos", cat_vacia_title: "Próximamente en esta categoría",
       cat_vacia_p: "Todavía no hay piezas acá — o pedila a medida", cat_vacia_link: "por WhatsApp",
       // — El artista (BORRADOR, reemplazar con la bio real) —
-      about_eyebrow: "El artista", about_title: "Paulo Imbellone",
+      about_eyebrow: "Sobre mí", about_title: "Paulo Imbellone",
       about_p1: "Orfebre. Trabaja la plata a mano, pieza por pieza, dejando que cada piedra decida su forma final. Nada se repite: lo que ves es lo que hay.",
       about_p2: "Del taller salen colgantes, anillos y brazaletes que combinan técnica tradicional con un pulso propio. También toma encargos personalizados.",
       about_sig: "El retorno de Saturno",
@@ -163,7 +163,7 @@ window.DATOS = {
       wa_custom: "¡Hola Paulo! Me gustaría encargar un amuleto personalizado. Te cuento la idea:"
     },
     pt: {
-      nav_amuletos: "Amuletos", nav_artista: "O artista", nav_historia: "História", nav_encargos: "Encomendas",
+      nav_amuletos: "Amuletos", nav_artista: "Sobre mim", nav_historia: "História", nav_encargos: "Encomendas",
       cart_word: "Pedido",
       hero_eyebrow: "Ourivesaria · amuletos únicos",
       hero_title: 'Amuletos nascidos do <span class="it">metal e da pedra</span>',
@@ -173,7 +173,7 @@ window.DATOS = {
       collection_note: "Cada um é único — quando vai, vai.",
       filtro_todos: "Todos", cat_vacia_title: "Em breve nesta categoria",
       cat_vacia_p: "Ainda não há peças aqui — ou peça sob medida", cat_vacia_link: "pelo WhatsApp",
-      about_eyebrow: "O artista", about_title: "Paulo Imbellone",
+      about_eyebrow: "Sobre mim", about_title: "Paulo Imbellone",
       about_p1: "Ourives. Trabalha a prata à mão, peça por peça, deixando cada pedra decidir sua forma final. Nada se repete: o que você vê é o que há.",
       about_p2: "Do ateliê saem pingentes, anéis e braceletes que unem técnica tradicional a um pulso próprio. Também aceita encomendas personalizadas.",
       about_sig: "El retorno de Saturno",
