@@ -3,174 +3,35 @@
     {
       "disponible": true,
       "fotos": [
-        "/img/IMG_2372.jpeg"
+        "/img/570AC830-8F43-4D88-977A-92C836A189BE.webp"
       ],
       "nombre": {
-        "es": "Gargantilla labradorita",
-        "pt": "Gargantilha"
-      },
-      "categorias": [
-        "gargantillas"
-      ],
-      "precio": 150000,
-      "piedra": {
-        "es": "Labradorita",
-        "pt": "Labradorita"
-      },
-      "material": {
-        "es": "Alpaca",
-        "pt": "Alpaca"
-      },
-      "medida": {
-        "es": "3 cm",
-        "pt": "3 cm"
-      },
-      "descripcion": {
-        "es": "Luego lo lleno",
-        "pt": "Logo mais"
-      },
-      "significado": {
-        "es": "Mais tarde",
-        "pt": "Mais tarde"
-      }
-    },
-    {
-      "disponible": true,
-      "fotos": [
-        "img/rodocrosita.jpg",
-        "/img/Sin título.webp"
-      ],
-      "nombre": {
-        "es": "Colgante Rodocrosita",
-        "pt": "Pingente Rodocrosita"
+        "es": "Lodolita",
+        "pt": ""
       },
       "categorias": [
         "dijes"
       ],
-      "precio": 96000,
+      "precio": 100000,
       "piedra": {
-        "es": "Rodocrosita",
-        "pt": "Rodocrosita"
+        "es": "Lodolita",
+        "pt": ""
       },
       "material": {
-        "es": "Plata 950 · Rodocrosita",
-        "pt": "Prata 950 · Rodocrosita"
+        "es": "Alpaca y bronce",
+        "pt": ""
       },
       "medida": {
-        "es": "4,5 cm",
-        "pt": "4,5 cm"
+        "es": "7 x 3 cm",
+        "pt": ""
       },
       "descripcion": {
-        "es": "Rodocrosita rosa bandeada —la piedra nacional argentina— engarzada en plata con un marco trenzado hecho a mano.",
-        "pt": "Rodocrosita rosa —a pedra nacional argentina— cravada em prata com moldura trançada feita à mão."
+        "es": "Piedra lodolita de Seabra , Bahia , Brasil. Lapidación artesanal. El cuarzo se encuentra en una transparencia óptima para ver el micromundo en su interior, materia inorganica de millones de años",
+        "pt": ""
       },
       "significado": {
-        "es": "Piedra del amor y la calma. Se asocia a sanar el corazón y suavizar las emociones.",
-        "pt": "Pedra do amor e da calma. Associada a curar o coração e suavizar as emoções."
-      }
-    },
-    {
-      "disponible": false,
-      "fotos": [
-        "img/onix-azul.jpg"
-      ],
-      "nombre": {
-        "es": "Brazalete Ónix Azul",
-        "pt": "Bracelete Ônix Azul"
-      },
-      "categorias": [
-        "pulseras",
-        "coleccion"
-      ],
-      "precio": 184000,
-      "piedra": {
-        "es": "Ónix azul",
-        "pt": "Ônix azul"
-      },
-      "material": {
-        "es": "Alpaca · Ónix azul",
-        "pt": "Alpaca · Ônix azul"
-      },
-      "medida": {
-        "es": "Ajustable",
-        "pt": "Ajustável"
-      },
-      "descripcion": {
-        "es": "Brazalete de plata con grabado geométrico de inspiración andina y un gran cabujón de ónix azul bandeado.",
-        "pt": "Bracelete de prata com gravação geométrica de inspiração andina e um grande cabochão de ônix azul."
-      },
-      "significado": {
-        "es": "Serenidad y equilibrio. Ayuda a calmar la mente y sostener el foco.",
-        "pt": "Serenidade e equilíbrio. Ajuda a acalmar a mente e sustentar o foco."
-      }
-    },
-    {
-      "disponible": true,
-      "fotos": [
-        "img/mandala-labradorita.jpg"
-      ],
-      "nombre": {
-        "es": "Colgante Mandala",
-        "pt": "Pingente Mandala"
-      },
-      "categorias": [
-        "gargantillas",
-        "coleccion"
-      ],
-      "precio": 122000,
-      "piedra": {
-        "es": "Labradorita",
-        "pt": "Labradorita"
-      },
-      "material": {
-        "es": "Plata · Labradorita · Cuero",
-        "pt": "Prata · Labradorita · Couro"
-      },
-      "medida": {
-        "es": "5 cm · cordón 45 cm",
-        "pt": "5 cm · cordão 45 cm"
-      },
-      "descripcion": {
-        "es": "Disco de plata grabado a mano como un sol, con una labradorita central de destello verde y dorado. Cordón de cuero.",
-        "pt": "Disco de prata gravado à mão como um sol, com labradorita central de reflexo verde e dourado. Cordão de couro."
-      },
-      "significado": {
-        "es": "Protección y transformación. Actúa como un escudo energético en los cambios.",
-        "pt": "Proteção e transformação. Atua como um escudo energético nas mudanças."
-      }
-    },
-    {
-      "disponible": true,
-      "fotos": [
-        "img/ojo-de-tigre.jpg"
-      ],
-      "nombre": {
-        "es": "Colgante Ojo de Tigre",
-        "pt": "Pingente Olho de Tigre"
-      },
-      "categorias": [
-        "dijes"
-      ],
-      "precio": 112000,
-      "piedra": {
-        "es": "Ojo de tigre",
-        "pt": "Olho de tigre"
-      },
-      "material": {
-        "es": "Plata · Ojo de tigre · Lapislázuli",
-        "pt": "Prata · Olho de tigre · Lápis-lazúli"
-      },
-      "medida": {
-        "es": "5,5 cm",
-        "pt": "5,5 cm"
-      },
-      "descripcion": {
-        "es": "Ojo de tigre dorado con un acento de lapislázuli y filigrana de espirales en plata.",
-        "pt": "Olho de tigre dourado com detalhe de lápis-lazúli e filigrana de espirais em prata."
-      },
-      "significado": {
-        "es": "Fuerza, coraje y protección. Ancla, da confianza y aleja lo que no suma.",
-        "pt": "Força, coragem e proteção. Ancora, dá confiança e afasta o que não soma."
+        "es": "Las lodolitas son consideras piedras para la conexión ancestral; siendo utilizada ceremonialmente para el acercamiento a las vidas pasadas.",
+        "pt": ""
       }
     }
   ]
