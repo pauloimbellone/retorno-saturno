@@ -1,28 +1,17 @@
 {
   "textos": {
     "es": {
-      "hero_sub": "Cada amuleto de Paulo Imbellone es único, forjado a mano y engarzado con piedras naturales. Envíos a toda Argentina y Brasil.",
-      "collection_note": "Cada uno es único — cuando se va, se va.",
+      "hero_sub": "Cada amuleto es hecho a mano y pieza unica, con piedras naturales, lapidaciones artesanales, con el respeto y conciencia listo para ser utilizado e intencionado.",
+      "collection_note": "El pulido detallado y artesanal para el mejor acabamiento de las gemas decoradas y cargadas por engarces en diferentes estilos",
       "about_title": "Paulo Imbellone",
-      "about_p1": "Orfebre. Trabaja la plata a mano, pieza por pieza, dejando que cada piedra decida su forma final. Nada se repite: lo que ves es lo que hay.",
-      "about_p2": "Del taller salen colgantes, anillos y brazaletes que combinan técnica tradicional con un pulso propio. También toma encargos personalizados.",
+      "about_p1": "Orfebre. Trabaja el metal a mano, pieza por pieza, dejando que cada piedra decida su forma final. Nada se repite, el pulido de las piedras en su mayoria elaborado en Bahia, Brazil, en la calma del vale do Capao.",
+      "about_p2": "Del taller salen colgantes, anillos y brazaletes que combinan técnica tradicional con un pulso propio. Tambien encargos personalizados.",
       "about_sig": "El retorno de Saturno",
       "historia_title": "Cada amuleto empieza en el banco de trabajo",
       "historia_p1": "No hay dos iguales. La piedra llega primero y pide su forma; el metal la acompaña. Después vienen el grabado, el engarce y el pulido, todo a mano.",
       "historia_p2": "Un amuleto no es solo una pieza linda: es algo que se lleva puesto, que acompaña. Por eso cada piedra se elige por lo que carga, además de por cómo se ve.",
       "custom_p": "Contame qué piedra te llama o qué idea tenés en mente y lo creamos juntos, desde cero."
     },
-    "pt": {
-      "hero_sub": "Cada amuleto de Paulo Imbellone é único, forjado à mão e cravado com pedras naturais. Envios para toda a Argentina e o Brasil.",
-      "collection_note": "Cada um é único — quando vai, vai.",
-      "about_title": "Paulo Imbellone",
-      "about_p1": "Ourives. Trabalha a prata à mão, peça por peça, deixando cada pedra decidir sua forma final. Nada se repete: o que você vê é o que há.",
-      "about_p2": "Do ateliê saem pingentes, anéis e braceletes que unem técnica tradicional a um pulso próprio. Também aceita encomendas personalizadas.",
-      "about_sig": "El retorno de Saturno",
-      "historia_title": "Cada amuleto começa na bancada",
-      "historia_p1": "Não há dois iguais. A pedra chega primeiro e pede sua forma; o metal acompanha. Depois vêm a gravação, a cravação e o polimento, tudo à mão.",
-      "historia_p2": "Um amuleto não é só uma peça bonita: é algo que se usa, que acompanha. Por isso cada pedra é escolhida pelo que carrega, além de como se vê.",
-      "custom_p": "Conte qual pedra te chama ou que ideia tem em mente e criamos juntos, do zero."
-    }
+    "pt": null
   }
 }
