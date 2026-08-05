@@ -20,6 +20,22 @@ local_backend: true
 media_folder: "img"
 public_folder: "/img"
 
+# Optimización automática de imágenes al subirlas:
+# convierte a WebP, comprime y redimensiona. Así Paulo puede subir fotos pesadas
+# del celular sin error, y el sitio queda liviano y rápido.
+media_libraries:
+  default:
+    config:
+      max_file_size: 20971520   # 20 MB de tolerancia para el archivo original
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1800
+          height: 1800
+        svg:
+          optimize: true
+
 # Mensajes legibles en el historial del repo
 backend_commit_messages:
   create: 'Alta de amuleto'
@@ -60,7 +76,7 @@ collections:
                 label_singular: "foto"
                 min: 1
                 max: 5
-                field: { label: "Foto", name: image, widget: image, choose_url: false, media_library: { config: { max_file_size: 3000000 } } }
+                field: { label: "Foto", name: image, widget: image, choose_url: false }
                 hint: "La 1ª es la principal. Podés sumar hasta 5 (detalle, puesta, otro ángulo). Ideal cuadradas o verticales, menos de 3 MB."
               - label: "Nombre"
                 name: nombre
