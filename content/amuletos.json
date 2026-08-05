@@ -3,6 +3,40 @@
     {
       "disponible": true,
       "fotos": [
+        "/img/CEAB50A8-8A05-4CC0-A780-A5BEDF55071C.webp"
+      ],
+      "nombre": {
+        "es": "Lapislázuli y cuarzo",
+        "pt": ""
+      },
+      "categorias": [
+        "dijes"
+      ],
+      "precio": 100000,
+      "piedra": {
+        "es": "Lapislázuli y cuarzo cristal",
+        "pt": ""
+      },
+      "material": {
+        "es": "Alpaca",
+        "pt": ""
+      },
+      "medida": {
+        "es": "9 x 1,5 cm",
+        "pt": ""
+      },
+      "descripcion": {
+        "es": "Lapislázuli chileno y cuarzo bahíano",
+        "pt": ""
+      },
+      "significado": {
+        "es": "Combinación poderosa para la comunicación precisa en situaciones que precisen foco y concentración.",
+        "pt": ""
+      }
+    },
+    {
+      "disponible": true,
+      "fotos": [
         "/img/570AC830-8F43-4D88-977A-92C836A189BE.webp"
       ],
       "nombre": {
