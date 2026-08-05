@@ -3,6 +3,41 @@
     {
       "disponible": true,
       "fotos": [
+        "/img/IMG_2490.webp",
+        "/img/IMG_2492.webp"
+      ],
+      "nombre": {
+        "es": "Rodocrosita",
+        "pt": ""
+      },
+      "categorias": [
+        "dijes"
+      ],
+      "precio": 70000,
+      "piedra": {
+        "es": "Rodocrosita",
+        "pt": ""
+      },
+      "material": {
+        "es": "Alpaca",
+        "pt": ""
+      },
+      "medida": {
+        "es": "6 x 2 cm",
+        "pt": ""
+      },
+      "descripcion": {
+        "es": "Dije en rodocrosita formato gota de bordes curvos",
+        "pt": ""
+      },
+      "significado": {
+        "es": "Lá rodocrosita considerada la piedra nacional argentina está relacionada al amor incondicional al projimo",
+        "pt": ""
+      }
+    },
+    {
+      "disponible": true,
+      "fotos": [
         "/img/CEAB50A8-8A05-4CC0-A780-A5BEDF55071C.webp"
       ],
       "nombre": {
