@@ -3,6 +3,41 @@
     {
       "disponible": true,
       "fotos": [
+        "/img/IMG_2493.webp",
+        "/img/IMG_2495.webp"
+      ],
+      "nombre": {
+        "es": "Labradorita",
+        "pt": ""
+      },
+      "categorias": [
+        "dijes"
+      ],
+      "precio": 100000,
+      "piedra": {
+        "es": "Labradorita",
+        "pt": ""
+      },
+      "material": {
+        "es": "Alpaca",
+        "pt": ""
+      },
+      "medida": {
+        "es": "9 x 2 cm",
+        "pt": ""
+      },
+      "descripcion": {
+        "es": "3 labradoritas em diferentes formatos azules",
+        "pt": ""
+      },
+      "significado": {
+        "es": "Dije orientado a la creatividad artística y expansión del pensamiento creativo",
+        "pt": ""
+      }
+    },
+    {
+      "disponible": true,
+      "fotos": [
         "/img/IMG_2490.webp",
         "/img/IMG_2492.webp"
       ],
