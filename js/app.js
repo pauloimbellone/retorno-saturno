@@ -22,7 +22,8 @@
   };
   const t = () => textos[lang];
   const $ = id => document.getElementById(id);
-  const foto = p => p.foto || (p.fotos && p.fotos[0]) || "";
+  const fotosDe = p => (p.fotos && p.fotos.length) ? p.fotos : (p.foto ? [p.foto] : []);
+  const foto = p => fotosDe(p)[0] || "";
   const slug = s => (s || "").toString().toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
   /* ---- carga de contenido (CMS) con respaldo a datos.js ---- */
@@ -116,9 +117,17 @@
       ? `<button class="btn ghost soldbtn" disabled>${tt.sold}</button>`
       : `<button class="btn ${inCart ? "ghost" : "solid"}"
           onclick="ERS.toggle('${p.id}');ERS.openModal('${p.id}')">${inCart ? "✓ " + tt.added : tt.add}</button>`;
+    const gal = fotosDe(p);
+    const thumbs = gal.length > 1
+      ? `<div class="thumbs">${gal.map((s, i) =>
+          `<button class="th ${i === 0 ? "on" : ""}" onclick="ERS.gallery('${s}',this)" aria-label="Foto ${i + 1}"><img src="${s}" alt=""></button>`).join("")}</div>`
+      : "";
     $("modal").innerHTML = `
       <button class="closex" onclick="ERS.closeModal()" aria-label="Cerrar">✕</button>
-      <div class="mimg ${sold ? "sold" : ""}"><img src="${foto(p)}" alt="${f(p.nombre)}"></div>
+      <div class="mimg ${sold ? "sold" : ""}">
+        <img id="mmain" src="${gal[0] || ""}" alt="${f(p.nombre)}">
+        ${thumbs}
+      </div>
       <div class="mbody">
         <div class="eyebrow ${sold ? "vendido" : ""}">${sold ? tt.sold : tt.unique}</div>
         <h3>${f(p.nombre)}</h3>
@@ -128,8 +137,10 @@
           <div><span>${tt.material}</span><b>${f(p.material)}</b></div>
           <div><span>${tt.measure}</span><b>${f(p.medida)}</b></div>
         </div>
-        <div class="price">${money(p.precio)}</div>
-        ${accion}
+        <div class="maction">
+          <span class="price">${money(p.precio)}</span>
+          ${accion}
+        </div>
       </div>`;
     $("scrim").classList.add("open");
   }
@@ -180,6 +191,10 @@
   }
   function goTo(sel) { document.querySelector(sel).scrollIntoView({ behavior: "smooth" }); }
   function setCat(k) { filtroCat = k; render(); }
+  function gallery(src, btn) {
+    const main = $("mmain"); if (main) main.src = src;
+    document.querySelectorAll(".mimg .th").forEach(t => t.classList.toggle("on", t === btn));
+  }
 
   /* ---- cielo estrellado ---- */
   function starfield() {
@@ -217,7 +232,7 @@
       b.addEventListener("click", () => setLang(b.dataset.lang, b)));
     document.querySelectorAll("[data-ig]").forEach(a => a.href = config.instagram);
 
-    window.ERS = { openModal, closeModal, toggle, checkout, customWA, openCart, closeCart, goTo, setCat };
+    window.ERS = { openModal, closeModal, toggle, checkout, customWA, openCart, closeCart, goTo, setCat, gallery };
 
     starfield();
     render();

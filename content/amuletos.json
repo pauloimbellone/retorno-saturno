@@ -2,7 +2,9 @@
   "amuletos": [
     {
       "disponible": true,
-      "foto": "/img/IMG_2372.jpeg",
+      "fotos": [
+        "/img/IMG_2372.jpeg"
+      ],
       "nombre": {
         "es": "Gargantilla labradorita",
         "pt": "Gargantilha"
@@ -34,7 +36,9 @@
     },
     {
       "disponible": true,
-      "foto": "img/rodocrosita.jpg",
+      "fotos": [
+        "img/rodocrosita.jpg"
+      ],
       "nombre": {
         "es": "Colgante Rodocrosita",
         "pt": "Pingente Rodocrosita"
@@ -66,7 +70,9 @@
     },
     {
       "disponible": false,
-      "foto": "img/onix-azul.jpg",
+      "fotos": [
+        "img/onix-azul.jpg"
+      ],
       "nombre": {
         "es": "Brazalete Ónix Azul",
         "pt": "Bracelete Ônix Azul"
@@ -99,7 +105,9 @@
     },
     {
       "disponible": true,
-      "foto": "img/mandala-labradorita.jpg",
+      "fotos": [
+        "img/mandala-labradorita.jpg"
+      ],
       "nombre": {
         "es": "Colgante Mandala",
         "pt": "Pingente Mandala"
@@ -132,7 +140,9 @@
     },
     {
       "disponible": true,
-      "foto": "img/ojo-de-tigre.jpg",
+      "fotos": [
+        "img/ojo-de-tigre.jpg"
+      ],
       "nombre": {
         "es": "Colgante Ojo de Tigre",
         "pt": "Pingente Olho de Tigre"

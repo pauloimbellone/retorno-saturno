@@ -54,12 +54,14 @@ collections:
                 widget: boolean
                 default: true
                 hint: "Destildá cuando se venda: la pieza queda en el catálogo marcada como «Vendido» (no se borra)."
-              - label: "Foto"
-                name: foto
-                widget: image
-                choose_url: false
-                media_library: { config: { max_file_size: 3000000 } }
-                hint: "Ideal cuadrada o vertical, liviana (menos de 3 MB)."
+              - label: "Fotos (hasta 5)"
+                name: fotos
+                widget: list
+                label_singular: "foto"
+                min: 1
+                max: 5
+                field: { label: "Foto", name: image, widget: image, choose_url: false, media_library: { config: { max_file_size: 3000000 } } }
+                hint: "La 1ª es la principal. Podés sumar hasta 5 (detalle, puesta, otro ángulo). Ideal cuadradas o verticales, menos de 3 MB."
               - label: "Nombre"
                 name: nombre
                 widget: object
