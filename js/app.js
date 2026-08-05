@@ -12,6 +12,7 @@
 
   let lang = "es";
   let filtroCat = "todos";
+  let modalFotos = [], modalIdx = 0;
   const cart = new Set();
 
   const money = n => config.moneda + Number(n).toLocaleString(config.localePrecio);
@@ -118,14 +119,20 @@
       : `<button class="btn ${inCart ? "ghost" : "solid"}"
           onclick="ERS.toggle('${p.id}');ERS.openModal('${p.id}')">${inCart ? "✓ " + tt.added : tt.add}</button>`;
     const gal = fotosDe(p);
-    const thumbs = gal.length > 1
+    modalFotos = gal; modalIdx = 0;
+    const multi = gal.length > 1;
+    const thumbs = multi
       ? `<div class="thumbs">${gal.map((s, i) =>
-          `<button class="th ${i === 0 ? "on" : ""}" onclick="ERS.gallery('${s}',this)" aria-label="Foto ${i + 1}"><img src="${s}" alt=""></button>`).join("")}</div>`
+          `<button class="th ${i === 0 ? "on" : ""}" onclick="ERS.showFoto(${i})" aria-label="Foto ${i + 1}"><img src="${s}" alt=""></button>`).join("")}</div>`
+      : "";
+    const flechas = multi
+      ? `<button class="nav prev" onclick="ERS.galNav(-1)" aria-label="Foto anterior">‹</button>
+         <button class="nav next" onclick="ERS.galNav(1)" aria-label="Foto siguiente">›</button>`
       : "";
     $("modal").innerHTML = `
       <button class="closex" onclick="ERS.closeModal()" aria-label="Cerrar">✕</button>
       <div class="mimg ${sold ? "sold" : ""}">
-        <img id="mmain" src="${gal[0] || ""}" alt="${f(p.nombre)}">
+        <div class="stage"><img id="mmain" src="${gal[0] || ""}" alt="${f(p.nombre)}">${flechas}</div>
         ${thumbs}
       </div>
       <div class="mbody">
@@ -191,10 +198,13 @@
   }
   function goTo(sel) { document.querySelector(sel).scrollIntoView({ behavior: "smooth" }); }
   function setCat(k) { filtroCat = k; render(); }
-  function gallery(src, btn) {
-    const main = $("mmain"); if (main) main.src = src;
-    document.querySelectorAll(".mimg .th").forEach(t => t.classList.toggle("on", t === btn));
+  function showFoto(i) {
+    if (!modalFotos.length) return;
+    modalIdx = (i + modalFotos.length) % modalFotos.length;
+    const main = $("mmain"); if (main) main.src = modalFotos[modalIdx];
+    document.querySelectorAll(".mimg .th").forEach((t, j) => t.classList.toggle("on", j === modalIdx));
   }
+  function galNav(dir) { showFoto(modalIdx + dir); }
 
   /* ---- cielo estrellado ---- */
   function starfield() {
@@ -232,7 +242,7 @@
       b.addEventListener("click", () => setLang(b.dataset.lang, b)));
     document.querySelectorAll("[data-ig]").forEach(a => a.href = config.instagram);
 
-    window.ERS = { openModal, closeModal, toggle, checkout, customWA, openCart, closeCart, goTo, setCat, gallery };
+    window.ERS = { openModal, closeModal, toggle, checkout, customWA, openCart, closeCart, goTo, setCat, showFoto, galNav };
 
     starfield();
     render();

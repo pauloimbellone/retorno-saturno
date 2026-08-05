@@ -181,7 +181,15 @@ footer a:hover{color:var(--teal)}
   border-radius:20px;max-width:860px;width:100%;max-height:90vh;overflow:auto;
   display:grid;grid-template-columns:1fr 1fr;position:relative;box-shadow:0 0 60px -20px var(--teal)}
 .modal .mimg{background:#0d0720;display:flex;flex-direction:column;min-height:0}
-.modal .mimg #mmain{width:100%;flex:1;object-fit:cover;min-height:300px}
+.modal .stage{position:relative;flex:1;min-height:300px;overflow:hidden}
+.modal .stage #mmain{width:100%;height:100%;object-fit:cover;display:block}
+.modal .nav{position:absolute;top:50%;translate:0 -50%;width:40px;height:40px;border-radius:50%;
+  border:1px solid rgba(255,255,255,.28);background:rgba(13,7,32,.32);backdrop-filter:blur(4px);
+  color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  opacity:.7;transition:.16s;z-index:2;padding-bottom:3px}
+.modal .nav:hover{opacity:1;background:rgba(13,7,32,.6);border-color:var(--teal);box-shadow:0 0 14px -4px var(--teal)}
+.modal .nav.prev{left:10px}
+.modal .nav.next{right:10px}
 .modal .thumbs{display:flex;gap:6px;padding:8px;background:rgba(13,7,32,.55);overflow-x:auto}
 .modal .thumbs .th{flex:0 0 auto;width:54px;height:54px;border-radius:8px;overflow:hidden;
   border:1px solid var(--line-soft);background:none;cursor:pointer;padding:0;transition:.15s}
@@ -209,7 +217,8 @@ footer a:hover{color:var(--teal)}
   .scrim{padding:10px}
   .modal{grid-template-columns:1fr;display:flex;flex-direction:column;max-height:90vh;overflow:hidden;max-width:100%}
   .modal .mimg{flex:0 0 auto}
-  .modal .mimg #mmain{flex:none;min-height:0;height:34vh}
+  .modal .stage{flex:none;min-height:0;height:34vh}
+  .modal .nav{width:34px;height:34px;font-size:19px}
   .modal .mbody{flex:1 1 auto;overflow-y:auto;padding:18px 18px 14px;gap:12px}
   .modal .maction{background:var(--panel);border-top:1px solid var(--line-soft);padding:12px 0 2px}
   .modal h3{font-size:24px}.modal .price{font-size:24px}
