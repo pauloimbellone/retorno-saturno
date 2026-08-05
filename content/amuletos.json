@@ -37,7 +37,8 @@
     {
       "disponible": true,
       "fotos": [
-        "img/rodocrosita.jpg"
+        "img/rodocrosita.jpg",
+        "/img/Sin título.webp"
       ],
       "nombre": {
         "es": "Colgante Rodocrosita",
