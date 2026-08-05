@@ -3,6 +3,41 @@
     {
       "disponible": true,
       "fotos": [
+        "/img/IMG_2499.webp",
+        "/img/IMG_2501.webp"
+      ],
+      "nombre": {
+        "es": "Amatista",
+        "pt": ""
+      },
+      "categorias": [
+        "dijes"
+      ],
+      "precio": 50000,
+      "piedra": {
+        "es": "Amatista",
+        "pt": ""
+      },
+      "material": {
+        "es": "Bronce",
+        "pt": ""
+      },
+      "medida": {
+        "es": "4 x 2 cm",
+        "pt": ""
+      },
+      "descripcion": {
+        "es": "Dije en bronce con piedra amatista",
+        "pt": ""
+      },
+      "significado": {
+        "es": "Piedra relacionada a la transmutación y al acompañar en momentos de cambio. Origen Uruguay",
+        "pt": ""
+      }
+    },
+    {
+      "disponible": true,
+      "fotos": [
         "/img/IMG_2493.webp",
         "/img/IMG_2495.webp"
       ],
